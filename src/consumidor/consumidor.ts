@@ -44,7 +44,7 @@ function startConsumer() {
                     try {
                         console.log('Sending update request with data:', updateData);
                         const response = await axios.put(
-                            `http://127.0.0.1:8081/update`,
+                            `https://entrenatusers.ddns.net/update`,
                             updateData,
                             { headers: { Authorization: `Bearer ${token}` } }
                         );
